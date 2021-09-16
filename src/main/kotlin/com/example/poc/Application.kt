@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class PocSpringDataElasticsearchApplication
+class Application
 
 fun main(args: Array<String>) {
-	runApplication<PocSpringDataElasticsearchApplication>(*args)
+	runApplication<Application>(*args)
 }
