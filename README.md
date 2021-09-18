@@ -20,6 +20,12 @@ Third, you need to start your application running the command bellow:
 mvn clean spring-boot:run
 ```
 
+Forth, to see if the application saved the model correctly you need to open the following URL
+
+````shell
+http://localhost:5000/#!/
+```
+
 # Cleaning up
 
 First, you need to stop your application
