@@ -22,7 +22,7 @@ mvn clean spring-boot:run
 
 Forth, to see if the application saved the model correctly you need to open the following URL
 
-````shell
+```shell
 http://localhost:5000/#!/
 ```
 
