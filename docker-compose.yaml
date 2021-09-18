@@ -16,10 +16,16 @@ services:
     volumes:
       - elasticsearch-data:/usr/share/elasticsearch/data
     ports:
-      - 9200:9200
-      - 9300:9300
+      - "9200:9200"
+      - "9300:9300"
     networks:
       - elasticsearch
+
+  elasticsearch-hq:
+    image: elastichq/elasticsearch-hq:release-v3.5.12
+    container_name: poc-spring-data-elasticsearch-hq
+    ports:
+      - "5000:5000"
 
 volumes:
   elasticsearch-data:
