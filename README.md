@@ -6,21 +6,21 @@ with [Elasticsearch](https://www.elastic.co/)
 
 # Testing
 
-First, you need to open a terminal at the root of the application.
+**First**, you need to open a terminal at the root of the application.
 
-Second, you need to the [Docker Compose](https://docs.docker.com/compose/) running the command bellow:
+**Second**, you need to the [Docker Compose](https://docs.docker.com/compose/) running the command bellow:
 
 ```shell
 docker-compuse up -d
 ```
 
-Third, you need to start your application running the command bellow:
+**Third**, you need to start your application running the command bellow:
 
 ```shell
 mvn clean spring-boot:run
 ```
 
-Forth, to see if the application saved the model correctly you need to open the following URL
+**Forth**, to see if the application saved the model correctly you need to open the following URL
 
 ```shell
 http://localhost:5000/#!/
