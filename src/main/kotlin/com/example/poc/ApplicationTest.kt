@@ -3,13 +3,11 @@ package com.example.poc
 import org.slf4j.LoggerFactory
 import org.springframework.boot.context.event.ApplicationReadyEvent
 import org.springframework.context.ApplicationListener
-import org.springframework.context.event.ContextStartedEvent
-import org.springframework.context.event.EventListener
 import org.springframework.stereotype.Component
 import java.math.BigDecimal
 
 @Component
-class ApplicationTest(private val modelRepository: ModelRepository) : ApplicationListener<ApplicationReadyEvent> {
+class ApplicationTest(private val repository: ModelRepository) : ApplicationListener<ApplicationReadyEvent> {
 
     private val log = LoggerFactory.getLogger(this::class.java)
 
@@ -28,7 +26,7 @@ class ApplicationTest(private val modelRepository: ModelRepository) : Applicatio
         )
 
         log.info("Creating $model")
-        this.modelRepository.save(model)
+        this.repository.save(model)
 
     }
 
