@@ -24,6 +24,8 @@ services:
   elasticsearch-hq:
     image: elastichq/elasticsearch-hq:release-v3.5.12
     container_name: poc-spring-data-elasticsearch-hq
+    environment:
+      - HQ_DEFAULT_URL=http://poc-spring-data-elasticsearch:9200
     ports:
       - "5000:5000"
     networks:
