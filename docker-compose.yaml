@@ -26,6 +26,8 @@ services:
     container_name: poc-spring-data-elasticsearch-hq
     ports:
       - "5000:5000"
+    networks:
+      - elasticsearch
 
 volumes:
   elasticsearch-data:
