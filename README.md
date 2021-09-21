@@ -11,7 +11,7 @@ with [Elasticsearch](https://www.elastic.co/)
 **Second**, you need to the [Docker Compose](https://docs.docker.com/compose/) running the command bellow:
 
 ```shell
-docker-compuse up -d
+docker-compose up -d
 ```
 
 **Third**, you need to start your application running the command bellow:
